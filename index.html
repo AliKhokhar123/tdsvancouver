@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commercial Landscaping Vancouver | TDS</title>
+<meta name="description" content="Commercial landscaping, 24/7 snow and ice management, site repairs and civil excavation for strata, commercial and municipal properties across Metro Vancouver and the Fraser Valley.">
+<link rel="canonical" href="https://tdsvancouver.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+<style>
+/* ---------- Design tokens ---------- */
+:root{
+  --g900:#0F2A18; --g800:#153F23; --g700:#19572F; --g600:#1E6E3F; --g500:#2F8046;
+  --g200:#B1D5BB; --g100:#D8EADD; --g50:#F0F7F2;
+  --ink900:#0F1511; --ink800:#1A2219; --ink700:#2E3832; --ink600:#4A574E; --ink300:#C7CFCA;
+  --line:#E4E8E5; --cream:#FAFAF6; --accent:#5DBE6F; --star:#F5B301;
+  --font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --display:'Plus Jakarta Sans','Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font);color:var(--ink800);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.15;letter-spacing:-.015em;margin:0}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--g900);padding:10px 16px;border-radius:8px;z-index:100;font-weight:700}
+.skip:focus{left:8px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+@media(min-width:768px){.wrap{padding:0 32px}}
+
+/* ---------- Surfaces: every section is light OR dark, text colour follows ---------- */
+.on-light{background:#fff;color:var(--ink800)}
+.on-cream{background:var(--cream);color:var(--ink800)}
+.on-dark{background:var(--g900);color:#fff}
+.muted{color:var(--ink600)}
+.on-dark .muted{color:var(--g100)}
+.section{padding:64px 0}
+@media(min-width:1024px){.section{padding:96px 0}}
+.eyebrow{font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--g600)}
+.on-dark .eyebrow{color:var(--accent)}
+.h2{font-size:clamp(1.75rem,1.2rem + 2vw,2.5rem);font-weight:800;margin-top:10px}
+.lead{margin-top:16px;font-size:1.0625rem;max-width:62ch}
+.sec-head{max-width:720px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head.center .lead{margin-left:auto;margin-right:auto}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 24px;border-radius:10px;font:700 1rem/1.2 var(--font);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,border-color .2s,color .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--g600);color:#fff}
+.btn-primary:hover{background:var(--g700)}
+.btn-light{background:#fff;color:var(--g900)}
+.btn-light:hover{background:var(--g50)}
+.btn-outline-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-outline-light:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.btn-block{width:100%}
+
+/* ---------- Top bar ---------- */
+.topbar{background:var(--g900);color:var(--g100);font-size:.8125rem}
+.topbar-in{display:grid;grid-template-columns:1fr;padding:9px 20px;text-align:center}
+.topbar strong{color:#fff;font-weight:600}
+.tb-side{display:none}
+@media(min-width:1024px){
+  .topbar-in{grid-template-columns:1fr auto 1fr;max-width:1200px;margin:0 auto;padding:9px 32px;text-align:center}
+  .tb-side{display:block}
+  .tb-left{text-align:left}.tb-right{text-align:right}
+  .tb-right a{color:var(--g100);text-decoration:none}.tb-right a:hover{color:#fff;text-decoration:underline}
+}
+.stars{color:var(--star);letter-spacing:1px}
+
+/* ---------- Header ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.hdr{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+.logo img{height:44px;width:auto}
+.nav{display:none}
+@media(min-width:1024px){
+  .nav{display:block}
+  .nav>ul{display:flex;align-items:center;gap:2px}
+}
+.nav a,.nav button{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:10px 12px;border:0;background:none;border-radius:8px;font:600 .9375rem/1 var(--font);color:var(--ink700);text-decoration:none;cursor:pointer}
+.nav a:hover,.nav button:hover{background:var(--g50);color:var(--g700)}
+.has-dd{position:relative}
+.dd{display:none;position:absolute;top:100%;left:0;min-width:340px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 60px rgba(15,42,24,.16);padding:8px}
+.dd a{display:block;width:100%;padding:12px 14px;border-radius:10px;font-weight:500;line-height:1.35;white-space:normal}
+.has-dd.open .dd,.has-dd:focus-within .dd{display:block}
+@media(hover:hover){.has-dd:hover .dd{display:block}}
+.caret{width:12px;height:12px}
+.hdr-actions{display:flex;align-items:center;gap:10px}
+.hdr-phone{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:44px;min-height:44px;border-radius:999px;border:2px solid var(--g100);color:var(--g700);font-weight:700;text-decoration:none;padding:0 12px}
+.hdr-phone:hover{background:var(--g50);border-color:var(--g200)}
+.hdr-phone svg{width:20px;height:20px;flex:none}
+.hdr-phone span{display:none}
+@media(min-width:1200px){.hdr-phone span{display:inline}}
+.hdr-quote{display:none}
+@media(min-width:640px){.hdr-quote{display:inline-flex;min-height:44px;padding:10px 20px}}
+.menu-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:2px solid var(--line);border-radius:10px;background:#fff;color:var(--ink800);cursor:pointer}
+.menu-btn svg{width:22px;height:22px}
+@media(min-width:1024px){.menu-btn{display:none}}
+.mnav{display:none;border-top:1px solid var(--line);background:#fff;max-height:calc(100vh - 120px);overflow:auto}
+.mnav.open{display:block}
+@media(min-width:1024px){.mnav,.mnav.open{display:none}}
+.mnav .wrap{padding-top:12px;padding-bottom:20px}
+.mnav-label{margin:14px 0 4px;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink600)}
+.mnav a.l{display:block;padding:13px 0;border-bottom:1px solid var(--line);font-weight:600;color:var(--ink800);text-decoration:none}
+.mnav .btn{margin-bottom:4px}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;isolation:isolate;overflow:hidden;background:var(--g900);color:#fff}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,42,24,.93),rgba(15,42,24,.86))}
+@media(min-width:1024px){.hero::after{background:linear-gradient(100deg,rgba(15,42,24,.95) 0%,rgba(15,42,24,.88) 52%,rgba(15,42,24,.55) 100%)}}
+.hero-grid{display:grid;gap:36px;padding-top:48px;padding-bottom:56px}
+@media(min-width:1024px){.hero-grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:56px;align-items:center;padding-top:88px;padding-bottom:88px}}
+.tagline{display:inline-flex;align-items:center;gap:10px;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);font-size:.875rem;font-weight:600;color:#fff}
+.tagline i{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block}
+.hero h1{margin-top:20px;font-size:clamp(2rem,1.3rem + 2.6vw,3rem);font-weight:800;color:#fff}
+.hero-sub{margin-top:18px;font-size:1.125rem;color:var(--g100);max-width:56ch}
+.hero-cta{margin-top:28px;display:flex;flex-direction:column;gap:12px}
+@media(min-width:480px){.hero-cta{flex-direction:row;flex-wrap:wrap}}
+.stats{margin-top:32px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:640px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.stats li{padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18)}
+.stats b{display:block;font:800 1.625rem/1.1 var(--display);color:#fff}
+.stats span{display:block;margin-top:4px;font-size:.8125rem;color:var(--g100)}
+
+/* ---------- Quote form ---------- */
+.form-card{background:#fff;color:var(--ink800);border-radius:20px;padding:24px;box-shadow:0 30px 70px rgba(0,0,0,.35)}
+@media(min-width:640px){.form-card{padding:32px}}
+.form-card h2{font-size:1.5rem;font-weight:800}
+.form-card .sub{margin-top:6px;font-size:.9375rem;color:var(--ink600)}
+.form{margin-top:20px;display:grid;gap:14px}
+.row2{display:grid;gap:14px}
+@media(min-width:480px){.row2{grid-template-columns:1fr 1fr}}
+.field label{display:block;margin-bottom:6px;font-size:.875rem;font-weight:600;color:var(--ink700)}
+.field input,.field select{width:100%;min-height:48px;padding:11px 14px;border:1.5px solid #C4CCC7;border-radius:10px;background:#fff;color:var(--ink800);font:400 1rem/1.3 var(--font)}
+.field input:focus,.field select:focus{outline:none;border-color:var(--g600);box-shadow:0 0 0 3px rgba(47,128,70,.25)}
+.field.err input,.field.err select{border-color:#B42318}
+.err-msg{display:none;margin-top:4px;font-size:.8125rem;color:#B42318;font-weight:600}
+.field.err .err-msg{display:block}
+.form-ok{display:none;padding:14px 16px;border-radius:10px;background:var(--g50);border:1px solid var(--g200);color:var(--g800);font-weight:600;font-size:.9375rem}
+.form-ok.show{display:block}
+.fine{font-size:.8125rem;color:var(--ink600)}
+
+/* ---------- Logo grids (clients + certifications) ---------- */
+.logos{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:640px){.logos{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(min-width:1024px){.logos.l8{grid-template-columns:repeat(8,minmax(0,1fr))}.logos.l7{grid-template-columns:repeat(7,minmax(0,1fr))}}
+.logos li{display:grid;place-items:center;height:80px;padding:12px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.logos img{max-height:46px;max-width:100%;width:auto;object-fit:contain}
+.band-title{text-align:center;font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink600);margin-bottom:24px}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;gap:56px;align-items:center}
+@media(min-width:1024px){.about-grid{grid-template-columns:1fr 1fr;gap:72px}}
+.collage{position:relative;padding-bottom:28px}
+.collage .main{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px}
+.collage .small{position:absolute;right:12px;bottom:0;width:44%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;border:6px solid #fff;box-shadow:0 16px 40px rgba(15,42,24,.2)}
+.badge-years{position:absolute;left:16px;top:16px;padding:12px 18px;border-radius:14px;background:var(--g700);color:#fff;text-align:center}
+.badge-years b{display:block;font:800 1.75rem/1 var(--display)}
+.badge-years span{font-size:.8125rem;color:var(--g100)}
+.checks{margin-top:28px;display:grid;gap:18px}
+@media(min-width:640px){.checks{grid-template-columns:1fr 1fr}}
+.checks li{display:flex;gap:12px}
+.checks .ic{flex:none;width:28px;height:28px;border-radius:50%;background:var(--g100);color:var(--g700);display:grid;place-items:center}
+.checks .ic svg{width:16px;height:16px}
+.checks b{display:block;font-weight:700}
+.checks p{font-size:.9375rem;color:var(--ink600)}
+.link-arrow{display:inline-block;margin-top:28px;font-weight:700;color:var(--g700);text-decoration:none}
+.link-arrow:hover{text-decoration:underline}
+
+/* ---------- Services ---------- */
+.svc-grid{margin-top:44px;display:grid;gap:22px}
+@media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.svc-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.svc{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;color:var(--ink800);box-shadow:0 6px 20px rgba(15,42,24,.06);transition:transform .25s,box-shadow .25s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(15,42,24,.14)}
+.svc .ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--g100)}
+.svc .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.svc:hover .ph img{transform:scale(1.05)}
+.pill{position:absolute;left:12px;top:12px;padding:5px 12px;border-radius:999px;background:var(--g900);color:#fff;font-size:.75rem;font-weight:700}
+.svc .body{display:flex;flex-direction:column;gap:8px;padding:22px;flex:1}
+.svc h3{font-size:1.1875rem;font-weight:800}
+.svc p{font-size:.9375rem;color:var(--ink600)}
+.svc .more{margin-top:auto;padding-top:8px;font-weight:700;color:var(--g700)}
+.svc-cta{justify-content:center;padding:28px;background:var(--g800);border-color:var(--g800);color:#fff}
+.svc-cta h3{color:#fff}
+.svc-cta p{color:var(--g100)}
+.svc-cta .more{color:#fff}
+
+/* ---------- Why choose ---------- */
+.why-grid{margin-top:44px;display:grid;gap:20px}
+@media(min-width:640px){.why-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.why-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.why{padding:26px;border:1px solid var(--line);border-radius:18px;background:#fff}
+.why .ic{width:46px;height:46px;border-radius:12px;background:var(--g50);color:var(--g700);display:grid;place-items:center}
+.why .ic svg{width:24px;height:24px}
+.why h3{margin-top:16px;font-size:1.125rem;font-weight:800}
+.why p{margin-top:8px;font-size:.9375rem;color:var(--ink600)}
+
+/* ---------- Snow band ---------- */
+.band{display:grid;overflow:hidden;border-radius:24px;background:var(--g800);color:#fff}
+@media(min-width:1024px){.band{grid-template-columns:1.1fr .9fr}}
+.band-text{padding:36px 24px}
+@media(min-width:768px){.band-text{padding:56px}}
+.band-text h2{margin-top:10px;font-size:clamp(1.625rem,1.1rem + 1.8vw,2.375rem);font-weight:800;color:#fff}
+.band-text p{margin-top:14px;color:var(--g100);max-width:52ch}
+.band-text .btn{margin-top:26px}
+.band-img{min-height:240px;position:relative;background:var(--g700)}
+.band-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* ---------- Areas ---------- */
+.chips{margin-top:32px;display:flex;flex-wrap:wrap;gap:10px}
+.chips li{padding:9px 18px;background:#fff;border:1px solid var(--line);border-radius:999px;font-weight:600;font-size:.9375rem;color:var(--ink800)}
+.areas-note{margin-top:22px;font-size:.9375rem}
+.areas-note a{font-weight:700;color:var(--g700)}
+
+/* ---------- Testimonials ---------- */
+.rev-grid{margin-top:44px;display:grid;gap:20px}
+@media(min-width:768px){.rev-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.rev{display:flex;flex-direction:column;gap:14px;padding:26px;border-radius:18px;background:#fff;color:var(--ink800)}
+.rev .stars{color:#A16207}
+.rev blockquote{margin:0;font-size:1rem;color:var(--ink800)}
+.rev footer{margin-top:auto;font-size:.875rem;color:var(--ink600)}
+.rev footer b{display:block;color:var(--ink800);font-size:.9375rem}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:820px;margin:44px auto 0;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;cursor:pointer;list-style:none;font:700 1.0625rem/1.4 var(--font);color:var(--ink800)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;font-size:1.75rem;line-height:1;color:var(--g600);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 22px;color:var(--ink600);max-width:70ch}
+
+/* ---------- Final CTA ---------- */
+.final{position:relative;overflow:hidden;text-align:center}
+.final::before{content:"";position:absolute;inset:0;opacity:.07;background-image:radial-gradient(circle at 1px 1px,#fff 1px,transparent 0);background-size:24px 24px}
+.final .wrap{position:relative}
+.final h2{font-size:clamp(1.75rem,1.2rem + 2vw,2.5rem);font-weight:800;color:#fff}
+.final p{margin:14px auto 0;max-width:56ch;color:var(--g100)}
+.final .actions{margin-top:30px;display:flex;flex-direction:column;gap:12px;align-items:stretch;justify-content:center}
+@media(min-width:480px){.final .actions{flex-direction:row;align-items:center}}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--ink900);color:var(--ink300)}
+.foot-grid{display:grid;gap:36px;padding-top:56px;padding-bottom:56px}
+@media(min-width:640px){.foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr 1.2fr}}
+.foot-logo{display:inline-block;background:#fff;padding:10px 14px;border-radius:12px}
+.foot-logo img{height:44px;width:auto}
+.site-footer h3{font:700 .9375rem var(--font);color:#fff;margin-bottom:14px}
+.site-footer li{margin-top:9px}
+.site-footer a{color:var(--ink300);text-decoration:none}
+.site-footer a:hover{color:#fff;text-decoration:underline}
+.site-footer address{font-style:normal;margin-top:9px}
+.foot-base{border-top:1px solid rgba(255,255,255,.12)}
+.foot-base .wrap{display:flex;flex-direction:column;gap:8px;padding-top:20px;padding-bottom:24px;font-size:.8125rem}
+@media(min-width:768px){.foot-base .wrap{flex-direction:row;justify-content:space-between}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/*HF-START*/
+.hdr{position:relative}
+.nav>ul>li{display:flex;align-items:center;height:72px}
+.nav>ul>li.mega-li{position:static}
+.mcol{min-width:0}
+.nav>ul>li>a[aria-current=page]{color:var(--g700);background:var(--g50)}
+.dd.mega{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);width:min(920px,calc(100vw - 40px));min-width:0;padding:22px;gap:6px 22px;border-radius:0 0 18px 18px}
+.has-dd.open .dd.mega,.has-dd:focus-within .dd.mega{display:grid}
+@media(hover:hover){.has-dd:hover .dd.mega{display:grid}}
+.dd.mega.m3{grid-template-columns:1fr 1fr 1.05fr}
+.dd.mega.areas{grid-template-columns:1fr 1.5fr 1fr}
+.dd-title{margin:2px 14px 8px;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink600)}
+.dd.mega a{padding:9px 14px;font-weight:500;line-height:1.3}
+.dd.mega a small{display:block;margin-top:1px;font-size:.75rem;font-weight:500;color:var(--ink600)}
+.dd.mega a.all{margin-top:6px;font-weight:700;color:var(--g700);background:var(--g50)}
+.dd.mega .two{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(8,auto);grid-auto-flow:column;gap:0 8px}
+.mpromo{border-radius:14px;overflow:hidden;background:var(--g800);color:#fff;display:flex;flex-direction:column;align-self:start}
+.mpromo img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.mpromo .pb{padding:16px}
+.mpromo .pt{font:800 1.0625rem var(--display);color:#fff}
+.mpromo .pb p:not(.pt){margin-top:6px;font-size:.875rem;color:var(--g100)}
+.mpromo .btn{margin-top:12px;min-height:42px;padding:8px 16px;font-size:.9375rem;width:100%}
+.mpromo.slim{margin-top:14px}
+.dd.mega .mpromo a.btn{display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 16px;color:#fff;background:var(--g600);font-weight:700}
+.foot-grid{grid-template-columns:1fr}
+@media(min-width:640px){.foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.foot-grid{grid-template-columns:1.35fr 1fr 1.15fr 1.1fr .8fr;gap:32px}}
+.foot-contact{margin-top:16px}.foot-contact li{margin-top:6px}
+.foot-contact a{font-weight:700;color:#fff}
+.site-footer address{margin-top:12px}
+main p a.il{color:var(--g700);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+main p a.il:hover{color:var(--g900)}
+main .on-dark p a.il,main .panel-dark p a.il,main .final p a.il{color:#fff}
+.chips a{color:inherit;text-decoration:none}
+.chips a:hover{color:var(--g700);text-decoration:underline}
+/*HF-END*/
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<!-- TOP BAR: service area line in the centre. Phone number lives in the header only. -->
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="tb-side tb-left"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <strong>5.0 on Google</strong></div>
+    <div><strong>Serving Metro Vancouver &amp; the Fraser Valley</strong></div>
+    <div class="tb-side tb-right"><a href="mailto:sales@tdsvancouver.com">sales@tdsvancouver.com</a></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="wrap hdr">
+    <a class="logo" href="index.html" aria-label="Total Dynamic Services, home"><img src="https://tdsvancouver.com/wp-content/uploads/2025/02/TDS-Website-logo-1048-x-460-300x132.png" alt="Total Dynamic Services" width="300" height="132"></a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="has-dd mega-li"><button type="button" aria-expanded="false" aria-haspopup="true">Services <svg class="caret" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></button>
+          <div class="dd mega m3">
+            <div class="mcol"><p class="dd-title">Service lines</p><a href="landscape/index.html">Landscape, Grounds &amp; Vegetation</a><a href="environmental-services/index.html">Sensitive Habitat &amp; Environmental</a><a href="site-repairs-waterproofing/index.html">Site Repairs &amp; Waterproofing</a><a href="snow-ice-management/index.html">Snow &amp; Ice Management</a><a href="civil-excavation/index.html">Civil &amp; Excavation</a><a class="all" href="services/index.html">View all services</a></div>
+            <div class="mcol"><p class="dd-title">Popular services</p><a href="services/commercial-snow-removal/index.html">Commercial snow removal</a><a href="services/commercial-de-icing/index.html">Commercial de-icing</a><a href="services/commercial-landscape-maintenance/index.html">Landscape maintenance</a><a href="services/commercial-lawn-care/index.html">Commercial lawn care</a><a href="services/strata-landscaping/index.html">Strata landscaping</a><a href="services/parking-lot-maintenance/index.html">Parking lot maintenance</a><a href="services/commercial-hardscaping/index.html">Commercial hardscaping</a><a href="services/invasive-species-control/index.html">Invasive species control</a></div>
+            <div class="mpromo"><img src="https://tdsvancouver.com/wp-content/uploads/2026/06/TDS-Vancouver-Landscape-Maintenance-1024x920.jpg" alt="TDS crew maintaining a commercial landscape" width="1024" height="920" loading="lazy"><div class="pb"><p class="pt">Free site quote</p><p>Tell us about your property and the services you need.</p><a class="btn btn-primary" href="#quote">Get a free quote</a></div></div>
+          </div>
+        </li>
+        <li class="has-dd mega-li"><button type="button" aria-expanded="false" aria-haspopup="true">Service areas <svg class="caret" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></button>
+          <div class="dd mega m3 areas">
+            <div class="mcol"><p class="dd-title">Snow removal by city</p><a href="services/commercial-snow-removal/abbotsford/index.html">Abbotsford<small>Commercial snow removal</small></a><a href="services/commercial-snow-removal/burnaby/index.html">Burnaby<small>Commercial snow removal</small></a><a href="services/commercial-snow-removal/langley/index.html">Langley<small>Commercial snow removal</small></a><a href="services/commercial-snow-removal/chilliwack/index.html">Chilliwack<small>Commercial snow removal</small></a><a href="services/commercial-snow-removal/surrey/index.html">Surrey<small>Commercial snow removal</small></a><a href="services/commercial-snow-removal/vancouver/index.html">Vancouver<small>Commercial snow removal</small></a></div>
+            <div class="mcol"><p class="dd-title">Metro Vancouver</p><div class="two"><a href="service-areas/index.html#vancouver">Vancouver</a><a href="service-areas/index.html#burnaby">Burnaby</a><a href="service-areas/index.html#richmond">Richmond</a><a href="service-areas/index.html#surrey">Surrey</a><a href="service-areas/index.html#langley">Langley</a><a href="service-areas/index.html#delta">Delta</a><a href="service-areas/index.html#new-westminster">New Westminster</a><a href="service-areas/index.html#coquitlam">Coquitlam</a><a href="service-areas/index.html#port-coquitlam">Port Coquitlam</a><a href="service-areas/index.html#port-moody">Port Moody</a><a href="service-areas/index.html#north-vancouver">North Vancouver</a><a href="service-areas/index.html#west-vancouver">West Vancouver</a><a href="service-areas/index.html#maple-ridge">Maple Ridge</a><a href="service-areas/index.html#pitt-meadows">Pitt Meadows</a><a href="service-areas/index.html#white-rock">White Rock</a></div></div>
+            <div class="mcol"><p class="dd-title">Fraser Valley</p><a href="service-areas/index.html#abbotsford">Abbotsford</a><a href="service-areas/index.html#chilliwack">Chilliwack</a><a href="service-areas/index.html#mission">Mission</a><a class="all" href="service-areas/index.html">View all service areas</a>
+              <div class="mpromo slim"><div class="pb"><p class="pt">Serving 18 cities</p><p>Not sure we cover you? Ask us.</p><a class="btn btn-primary" href="#quote">Get a free quote</a></div></div></div>
+          </div>
+        </li>
+        <li class="has-dd"><button type="button" aria-expanded="false" aria-haspopup="true">About <svg class="caret" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></button>
+          <div class="dd" style="min-width:240px"><a href="about/index.html">About us</a><a href="faqs/index.html">FAQs</a><a href="careers/index.html">Careers</a><a href="safety/index.html">Safety</a></div>
+        </li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a href="contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hdr-actions">
+      <a class="hdr-phone" href="tel:6042106629" aria-label="Call 604-210-6629">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>604-210-6629</span>
+      </a>
+      <a class="btn btn-primary hdr-quote" href="#quote">Get a free quote</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path id="menuIcon" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mnav" id="mnav"><div class="wrap"><a class="btn btn-primary btn-block" href="#quote">Get a free quote</a><p class="mnav-label">Services</p><a class="l" href="services/index.html">All services</a><a class="l" href="landscape/index.html">Landscape, Grounds &amp; Vegetation</a><a class="l" href="environmental-services/index.html">Sensitive Habitat &amp; Environmental</a><a class="l" href="site-repairs-waterproofing/index.html">Site Repairs &amp; Waterproofing</a><a class="l" href="snow-ice-management/index.html">Snow &amp; Ice Management</a><a class="l" href="civil-excavation/index.html">Civil &amp; Excavation</a><p class="mnav-label">Popular services</p><a class="l" href="services/commercial-snow-removal/index.html">Commercial snow removal</a><a class="l" href="services/commercial-de-icing/index.html">Commercial de-icing</a><a class="l" href="services/commercial-landscape-maintenance/index.html">Landscape maintenance</a><a class="l" href="services/commercial-lawn-care/index.html">Commercial lawn care</a><a class="l" href="services/strata-landscaping/index.html">Strata landscaping</a><a class="l" href="services/parking-lot-maintenance/index.html">Parking lot maintenance</a><a class="l" href="services/commercial-hardscaping/index.html">Commercial hardscaping</a><a class="l" href="services/invasive-species-control/index.html">Invasive species control</a><p class="mnav-label">Service areas</p><a class="l" href="service-areas/index.html">All service areas</a><a class="l" href="services/commercial-snow-removal/abbotsford/index.html">Snow removal in Abbotsford</a><a class="l" href="services/commercial-snow-removal/burnaby/index.html">Snow removal in Burnaby</a><a class="l" href="services/commercial-snow-removal/langley/index.html">Snow removal in Langley</a><a class="l" href="services/commercial-snow-removal/chilliwack/index.html">Snow removal in Chilliwack</a><a class="l" href="services/commercial-snow-removal/surrey/index.html">Snow removal in Surrey</a><a class="l" href="services/commercial-snow-removal/vancouver/index.html">Snow removal in Vancouver</a><p class="mnav-label">Company</p><a class="l" href="about/index.html">About us</a><a class="l" href="faqs/index.html">FAQs</a><a class="l" href="careers/index.html">Careers</a><a class="l" href="safety/index.html">Safety</a><a class="l" href="blog/index.html">Blog</a><a class="l" href="contact/index.html">Contact</a></div></div>
+</header>
+
+<main id="content">
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-img" alt="" aria-hidden="true" fetchpriority="high" width="1024" height="920"
+       src="https://tdsvancouver.com/wp-content/uploads/2026/06/TDS-Vancouver-Landscape-Maintenance-1024x920.jpg"
+       srcset="https://tdsvancouver.com/wp-content/uploads/2026/06/TDS-Vancouver-Landscape-Maintenance-1024x920.jpg 1024w, https://tdsvancouver.com/wp-content/uploads/2026/06/TDS-Vancouver-Landscape-Maintenance-scaled.jpg 2560w"
+       sizes="100vw">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="tagline"><i></i> Four Seasons. One Standard.</p>
+      <h1>Commercial Landscaping &amp; Property Services for Metro Vancouver &amp; the Fraser Valley</h1>
+      <p class="hero-sub">Landscape maintenance, 24/7 snow and ice management, site repairs and civil work for commercial, strata, industrial and municipal properties, all delivered by our own in-house crews.</p>
+      <div class="hero-cta">
+        <a class="btn btn-light" href="#quote">Get a free quote</a>
+        <a class="btn btn-outline-light" href="#services">Explore our services</a>
+      </div>
+      <ul class="stats">
+        <li><b>5.0</b><span>Google rating</span></li>
+        <li><b>2010</b><span>Serving BC since</span></li>
+        <li><b>100%</b><span>In-house crews</span></li>
+        <li><b>24/7</b><span>Snow response</span></li>
+      </ul>
+    </div>
+
+    <div class="form-card" id="quote">
+      <h2>Request a free quote</h2>
+      <p class="sub">Tell us about your property and we will get back to you.</p>
+      <form class="form" id="quoteForm" novalidate>
+        <div class="field"><label for="q-name">Full name</label><input id="q-name" name="name" type="text" autocomplete="name" required><span class="err-msg">Please enter your name.</span></div>
+        <div class="row2">
+          <div class="field"><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" required><span class="err-msg">Please enter a phone number.</span></div>
+          <div class="field"><label for="q-email">Email</label><input id="q-email" name="email" type="email" autocomplete="email" required><span class="err-msg">Please enter a valid email.</span></div>
+        </div>
+        <div class="field"><label for="q-service">Service needed</label>
+          <select id="q-service" name="service" required>
+            <option value="">Select a service</option>
+            <option>Landscape, grounds and vegetation</option>
+            <option>Snow and ice management</option>
+            <option>Site repairs and waterproofing</option>
+            <option>Sensitive habitat and environmental</option>
+            <option>Civil and excavation</option>
+            <option>Not sure yet</option>
+          </select><span class="err-msg">Please choose a service.</span></div>
+        <div class="field"><label for="q-city">Property city</label>
+          <select id="q-city" name="city" required>
+            <option value="">Select a city</option>
+            <option>Vancouver</option><option>Burnaby</option><option>Richmond</option><option>Surrey</option><option>Langley</option><option>Delta</option>
+            <option>New Westminster</option><option>Coquitlam</option><option>Port Coquitlam</option><option>Port Moody</option><option>North Vancouver</option><option>West Vancouver</option>
+            <option>Maple Ridge</option><option>Pitt Meadows</option><option>White Rock</option><option>Abbotsford</option><option>Chilliwack</option><option>Mission</option>
+            <option>Other</option>
+          </select><span class="err-msg">Please choose a city.</span></div>
+        <button class="btn btn-primary btn-block" type="submit">Request my quote</button>
+        <p class="form-ok" id="formOk" role="status">Thank you. We have your request and will be in touch shortly.</p>
+        <p class="fine">We only use your details to respond to this request.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="on-cream" style="padding:48px 0" aria-labelledby="clients-h">
+  <div class="wrap">
+    <h2 class="band-title" id="clients-h">Our satisfied clients</h2>
+    <ul class="logos l8">
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2022/11/VVCA_Horiz_FullColor_logo.png" alt="VVCA" loading="lazy" width="160" height="46"></li>
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2022/11/FraserHealth_800x533-768x512-removebg-preview.png" alt="Fraser Health" loading="lazy" width="160" height="46"></li>
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2022/11/download-removebg-preview.png" alt="Metro Vancouver" loading="lazy" width="160" height="46"></li>
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2022/11/TranBC.png" alt="TranBC" loading="lazy" width="160" height="46"></li>
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2022/11/Canada-Post-logo-removebg-preview.png" alt="Canada Post" loading="lazy" width="160" height="46"></li>
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2022/11/9FjXgFet9VcH4fXyqvva2j-removebg-preview.png" alt="Staples" loading="lazy" width="160" height="46"></li>
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2022/11/download-removebg-preview-1.png" alt="KDS Construction" loading="lazy" width="160" height="46"></li>
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2022/11/Kin_Canada_Logo.svg.png" alt="Kin Canada" loading="lazy" width="160" height="46"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section on-light" id="about">
+  <div class="wrap about-grid">
+    <div class="collage">
+      <img class="main" src="https://tdsvancouver.com/wp-content/uploads/2022/12/lawn-sanitation-cutting-with-machine-1024x682.jpg" alt="TDS crew cutting commercial lawn with a ride-on mower" loading="lazy" width="1024" height="682">
+      <img class="small" src="https://tdsvancouver.com/wp-content/uploads/2025/04/IMG_2099-1024x683.jpg" alt="TDS truck fitted with a snow plow" loading="lazy" width="1024" height="683">
+      <div class="badge-years"><b>16+</b><span>years of service</span></div>
+    </div>
+    <div>
+      <p class="eyebrow">About TDS</p>
+      <h2 class="h2">One accountable team, in every season</h2>
+      <p class="lead muted">Since 2010, Total Dynamic Services has delivered year-round property maintenance and repair support for commercial, institutional, municipal and strata clients. Highly trained staff, company-owned equipment and responsive management keep every site running.</p>
+      <ul class="checks">
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span><div><b>100% in-house</b><p>Our own crews and our own equipment on every job.</p></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span><div><b>Carbon neutral operations</b><p>Fleet fuel tracked and offset with verified credits.</p></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span><div><b>Built for safety</b><p><a class="il" href="safety/index.html">WorkSafeBC</a> covered crews with project specific safety plans.</p></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></span><div><b>Documented service</b><p>Photos, times and GPS-verified attendance for snow work.</p></div></li>
+      </ul>
+      <a class="link-arrow" href="about/index.html">More about TDS &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section on-cream" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Our services</p>
+      <h2 class="h2">Commercial property services, all under one roof</h2>
+      <p class="lead muted">Choose the service you need today. Most clients bundle two or three, so one crew can look after the whole site.</p>
+    </div>
+    <div class="svc-grid">
+      <a class="svc" href="landscape/index.html">
+        <div class="ph"><img src="https://tdsvancouver.com/wp-content/uploads/2022/12/garden-shrubs-maintenance-1024x682.jpg" alt="Landscaper trimming shrubs on a commercial property" loading="lazy" width="1024" height="682"></div>
+        <div class="body"><h3>Landscape, Grounds &amp; Vegetation</h3><p>Maintenance, construction and vegetation management for commercial and strata grounds.</p><span class="more">View service &rarr;</span></div>
+      </a>
+      <a class="svc" href="snow-ice-management/index.html">
+        <div class="ph"><img src="https://tdsvancouver.com/wp-content/uploads/2025/04/IMG_2099-1024x683.jpg" alt="TDS truck with snow plow ready for winter service" loading="lazy" width="1024" height="683"><span class="pill">24/7 response</span></div>
+        <div class="body"><h3>Snow &amp; Ice Management</h3><p>Plowing, salting, sidewalk clearing and real-time site reporting through the season.</p><span class="more">View service &rarr;</span></div>
+      </a>
+      <a class="svc" href="site-repairs-waterproofing/index.html">
+        <div class="ph"><img src="https://tdsvancouver.com/wp-content/uploads/elementor/thumbs/TDS-Vancouver-concrete-repairs-rmr7gumfua0bpeblsmdfew9qt87kgas1wv3c8k4pfo.png" alt="TDS crew member repairing concrete on a commercial site" loading="lazy" width="640" height="480"></div>
+        <div class="body"><h3>Site Repairs &amp; Waterproofing</h3><p>Concrete, asphalt, paver, drainage and curb repairs that protect your property.</p><span class="more">View service &rarr;</span></div>
+      </a>
+      <a class="svc" href="environmental-services/index.html">
+        <div class="ph"><img src="https://tdsvancouver.com/wp-content/uploads/elementor/thumbs/Image-6-rniomv7791fpksscb8vv6tzfxiz2542oi2twfgszb8.webp" alt="Natural area trail maintained by TDS" loading="lazy" width="640" height="480"></div>
+        <div class="body"><h3>Sensitive Habitat &amp; Environmental</h3><p>Invasive species control, native planting, erosion control and habitat restoration.</p><span class="more">View service &rarr;</span></div>
+      </a>
+      <a class="svc" href="civil-excavation/index.html">
+        <div class="ph"><img src="https://tdsvancouver.com/wp-content/uploads/2026/04/TDS-Website-Images-640-x-480-14.png" alt="TDS excavator and dump truck on a civil project" loading="lazy" width="640" height="480"></div>
+        <div class="body"><h3>Civil &amp; Excavation</h3><p>Excavation, grading and site works with company-owned equipment.</p><span class="more">View service &rarr;</span></div>
+      </a>
+      <a class="svc svc-cta" href="services/index.html">
+        <h3>Need more than one service?</h3>
+        <p style="margin-top:10px">Bundle grounds, snow and repairs under one team and one point of contact.</p>
+        <span class="more" style="margin-top:18px">See all services &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE TDS -->
+<section class="section on-light">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="eyebrow">Why clients choose TDS</p>
+      <h2 class="h2">Reliable crews you can hold accountable</h2>
+    </div>
+    <div class="why-grid">
+      <article class="why"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span><h3>Highly experienced</h3><p>16+ years of in-house work delivered by trained TDS crews you can count on for consistent results.</p></article>
+      <article class="why"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Built for safety</h3><p>A comprehensive health and safety program with project specific planning. Every crew member is trained, uniformed and WorkSafeBC covered.</p></article>
+      <article class="why"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><h3>24/7 rapid response</h3><p>Direct management means we can mobilize quickly during seasonal peaks and emergency callouts.</p></article>
+      <article class="why"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></span><h3>Dedicated equipment</h3><p>A company-owned fleet gives us tighter control over scheduling, quality and efficiency on every site.</p></article>
+      <article class="why"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span><h3>Carbon neutral operations</h3><p>We track fleet fuel use and buy verified carbon credits to help clients meet environmental and ESG goals.</p></article>
+      <article class="why"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Consistent quality</h3><p>Clear standards, active supervision and proven processes from planning through execution.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- SNOW BAND -->
+<section class="on-cream" style="padding:0 0 64px">
+  <div class="wrap">
+    <div class="band">
+      <div class="band-text">
+        <p class="eyebrow" style="color:var(--accent)">Winter service</p>
+        <h2>Lock in your snow routes before the first storm</h2>
+        <p>Routes, equipment and crews prepared well before winter. Every visit is documented with service times, site photos and GPS-verified attendance.</p>
+        <a class="btn btn-light" href="snow-ice-management/index.html">See snow and ice services</a>
+      </div>
+      <div class="band-img"><img src="https://tdsvancouver.com/wp-content/uploads/elementor/thumbs/TDS-Vancouver-Snow-Removal-Services-rmhlhtcf1605o3yfgd3jrdq2xbhtf85gi5tcupc3ic.png" alt="TDS snow removal crew and equipment at work" loading="lazy" width="640" height="480"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section class="section on-cream" id="areas" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Service areas</p>
+      <h2 class="h2">Serving 18 cities across Metro Vancouver and the Fraser Valley</h2>
+    </div>
+    <ul class="chips"><li><a href="services/commercial-snow-removal/vancouver/index.html" title="Commercial snow removal in Vancouver">Vancouver</a></li><li><a href="services/commercial-snow-removal/burnaby/index.html" title="Commercial snow removal in Burnaby">Burnaby</a></li><li><a href="service-areas/index.html#richmond" title="Services in Richmond">Richmond</a></li><li><a href="services/commercial-snow-removal/surrey/index.html" title="Commercial snow removal in Surrey">Surrey</a></li><li><a href="services/commercial-snow-removal/langley/index.html" title="Commercial snow removal in Langley">Langley</a></li><li><a href="service-areas/index.html#delta" title="Services in Delta">Delta</a></li><li><a href="service-areas/index.html#new-westminster" title="Services in New Westminster">New Westminster</a></li><li><a href="service-areas/index.html#coquitlam" title="Services in Coquitlam">Coquitlam</a></li><li><a href="service-areas/index.html#port-coquitlam" title="Services in Port Coquitlam">Port Coquitlam</a></li><li><a href="service-areas/index.html#port-moody" title="Services in Port Moody">Port Moody</a></li><li><a href="service-areas/index.html#north-vancouver" title="Services in North Vancouver">North Vancouver</a></li><li><a href="service-areas/index.html#west-vancouver" title="Services in West Vancouver">West Vancouver</a></li><li><a href="service-areas/index.html#maple-ridge" title="Services in Maple Ridge">Maple Ridge</a></li><li><a href="service-areas/index.html#pitt-meadows" title="Services in Pitt Meadows">Pitt Meadows</a></li><li><a href="service-areas/index.html#white-rock" title="Services in White Rock">White Rock</a></li><li><a href="services/commercial-snow-removal/abbotsford/index.html" title="Commercial snow removal in Abbotsford">Abbotsford</a></li><li><a href="services/commercial-snow-removal/chilliwack/index.html" title="Commercial snow removal in Chilliwack">Chilliwack</a></li><li><a href="service-areas/index.html#mission" title="Services in Mission">Mission</a></li></ul>
+    <p class="areas-note muted">Not sure we cover your property? <a href="contact/index.html">Contact us</a> and we will confirm.</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section on-dark">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="eyebrow">Client reviews</p>
+      <h2 class="h2" style="color:#fff">Rated 5.0 on Google</h2>
+    </div>
+    <div class="rev-grid">
+      <figure class="rev" style="margin:0">
+        <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span class="sr-only">5 out of 5 stars</span>
+        <blockquote>Great people awesome service</blockquote>
+        <footer><b>Darrell Hyland</b>Google review</footer>
+      </figure>
+      <figure class="rev" style="margin:0">
+        <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span class="sr-only">5 out of 5 stars</span>
+        <blockquote>Great place if you need any landscaping done or concrete work, they also do brick retaining walls</blockquote>
+        <footer><b>Calin Tveden</b>Google review</footer>
+      </figure>
+      <figure class="rev" style="margin:0">
+        <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span class="sr-only">5 out of 5 stars</span>
+        <blockquote>Pleasure to have Mike and his team maintaining our difficult site. Few and far between issues are dealt with swiftly and professionally.</blockquote>
+        <footer><b>Marcel van Hattem</b>Google review</footer>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section on-cream" style="padding:56px 0" aria-labelledby="cert-h">
+  <div class="wrap">
+    <h2 class="band-title" id="cert-h">Certified and accredited</h2>
+    <ul class="logos l7">
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2025/04/WorkSafeBC-logo-rgb-1024x194.jpg" alt="WorkSafeBC" loading="lazy" width="160" height="30"></li>
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2025/04/safecontractor-approved-logo-vector-removebg-preview.png" alt="SafeContractor approved" loading="lazy" width="80" height="80"></li>
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2025/04/VRCA-Logo-Colour-1024x403.png" alt="Vancouver Regional Construction Association" loading="lazy" width="120" height="47"></li>
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2025/04/SIMA_2C_Tag_Print.webp" alt="Snow and Ice Management Association" loading="lazy" width="120" height="47"></li>
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2026/05/TDS-Scope-1-2-2024.png" alt="GHG Protocol Scope 1 and 2 certified, 2024" loading="lazy" width="80" height="80"></li>
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2026/05/logo-safecompanycertified-spot-350x350-1.webp" alt="Safe Company certified" loading="lazy" width="80" height="80"></li>
+      <li><img src="https://tdsvancouver.com/wp-content/uploads/2026/05/BCCSA_cor.png" alt="BCCSA Certificate of Recognition" loading="lazy" width="120" height="60"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section on-light" id="faq">
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="h2">Common questions from property managers</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>What types of properties does TDS work on?</summary><p>We serve commercial, strata, industrial, institutional and municipal properties across Metro Vancouver and the Fraser Valley, from single sites to larger multi-service contracts.</p></details>
+      <details><summary>Are your crews employees or subcontractors?</summary><p>Our work is delivered in-house by trained TDS crews using company-owned equipment, so one team is accountable for your site.</p></details>
+      <details><summary>How fast can you respond to a snow event?</summary><p>Our direct management structure lets us mobilize quickly during seasonal peaks and emergency callouts, and our snow and ice crews operate around the clock during winter weather.</p></details>
+      <details><summary>How do I know the work was done?</summary><p>For <a class="il" href="snow-ice-management/index.html">snow and ice management</a> we document each visit in real time, including service times, site photos, weather observations and GPS-verified attendance records.</p></details>
+      <details><summary>Is TDS certified and safety compliant?</summary><p>Yes. Crews are trained, uniformed and WorkSafeBC covered, and TDS holds recognized safety and industry credentials including SafeContractor, Safe Company, BCCSA COR, VRCA and SIMA membership, plus GHG Protocol Scope 1 and 2 certification.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section on-dark final">
+  <div class="wrap">
+    <h2>Looking for a property services partner you can count on?</h2>
+    <p>TDS provides tailored, in-house property solutions for property managers, corporate facilities, stratas, developers and general contractors across Metro Vancouver and the Fraser Valley.</p>
+    <div class="actions">
+      <a class="btn btn-light" href="#quote">Get a free quote</a>
+      <a class="btn btn-outline-light" href="tel:6042106629">Call 604-210-6629</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="foot-logo" href="index.html"><img src="https://tdsvancouver.com/wp-content/uploads/2025/02/TDS-Website-logo-1048-x-460-300x132.png" alt="Total Dynamic Services" loading="lazy" width="300" height="132"></a>
+      <p style="margin-top:16px;max-width:34ch;font-size:.9375rem">Four Seasons. One Standard. Commercial, municipal and strata property maintenance, design, construction and repair across Metro Vancouver and the Fraser Valley.</p>
+      <ul class="foot-contact"><li><a href="tel:6042106629">604-210-6629</a></li><li><a href="mailto:sales@tdsvancouver.com">sales@tdsvancouver.com</a></li></ul>
+      <address>5669 199 St, Langley,<br>BC V3A 1H9, Canada</address>
+    </div>
+    <div><h3>Services</h3><ul><li><a href="landscape/index.html">Landscape, Grounds &amp; Vegetation</a></li><li><a href="environmental-services/index.html">Sensitive Habitat &amp; Environmental</a></li><li><a href="site-repairs-waterproofing/index.html">Site Repairs &amp; Waterproofing</a></li><li><a href="snow-ice-management/index.html">Snow &amp; Ice Management</a></li><li><a href="civil-excavation/index.html">Civil &amp; Excavation</a></li><li><a href="services/index.html">All services</a></li></ul></div>
+    <div><h3>Popular services</h3><ul><li><a href="services/commercial-snow-removal/index.html">Commercial snow removal</a></li><li><a href="services/commercial-de-icing/index.html">Commercial de-icing</a></li><li><a href="services/commercial-landscape-maintenance/index.html">Landscape maintenance</a></li><li><a href="services/commercial-lawn-care/index.html">Commercial lawn care</a></li><li><a href="services/strata-landscaping/index.html">Strata landscaping</a></li><li><a href="services/parking-lot-maintenance/index.html">Parking lot maintenance</a></li><li><a href="services/commercial-hardscaping/index.html">Commercial hardscaping</a></li><li><a href="services/invasive-species-control/index.html">Invasive species control</a></li></ul></div>
+    <div><h3>Service areas</h3><ul><li><a href="services/commercial-snow-removal/abbotsford/index.html">Snow removal in Abbotsford</a></li><li><a href="services/commercial-snow-removal/burnaby/index.html">Snow removal in Burnaby</a></li><li><a href="services/commercial-snow-removal/langley/index.html">Snow removal in Langley</a></li><li><a href="services/commercial-snow-removal/chilliwack/index.html">Snow removal in Chilliwack</a></li><li><a href="services/commercial-snow-removal/surrey/index.html">Snow removal in Surrey</a></li><li><a href="services/commercial-snow-removal/vancouver/index.html">Snow removal in Vancouver</a></li><li><a href="service-areas/index.html">All service areas</a></li></ul></div>
+    <div><h3>Company</h3><ul><li><a href="index.html">Home</a></li><li><a href="about/index.html">About</a></li><li><a href="faqs/index.html">FAQs</a></li><li><a href="careers/index.html">Careers</a></li><li><a href="safety/index.html">Safety</a></li><li><a href="blog/index.html">Blog</a></li><li><a href="contact/index.html">Contact</a></li></ul></div>
+  </div>
+  <div class="foot-base"><div class="wrap">
+    <p>Copyright &copy; <span id="yr">2026</span> Total Dynamic Services</p>
+    <p><a href="https://tdsvancouver.com/privacy-policy/">Privacy policy</a></p>
+  </div></div>
+</footer>
+
+<!-- Structured data: Organization + FAQPage (no self-serving review markup) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://tdsvancouver.com/#organization",
+      "name": "Total Dynamic Services",
+      "alternateName": "TDS",
+      "url": "https://tdsvancouver.com/",
+      "logo": "https://tdsvancouver.com/wp-content/uploads/2025/02/TDS-Website-logo-1048-x-460-300x132.png",
+      "slogan": "Four Seasons. One Standard.",
+      "telephone": "+1-604-210-6629",
+      "email": "sales@tdsvancouver.com",
+      "foundingDate": "2010",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5669 199 St",
+        "addressLocality": "Langley",
+        "addressRegion": "BC",
+        "postalCode": "V3A 1H9",
+        "addressCountry": "CA"
+      },
+      "areaServed": ["Metro Vancouver", "Fraser Valley"]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What types of properties does TDS work on?", "acceptedAnswer": { "@type": "Answer", "text": "We serve commercial, strata, industrial, institutional and municipal properties across Metro Vancouver and the Fraser Valley, from single sites to larger multi-service contracts." } },
+        { "@type": "Question", "name": "Are your crews employees or subcontractors?", "acceptedAnswer": { "@type": "Answer", "text": "Our work is delivered in-house by trained TDS crews using company-owned equipment, so one team is accountable for your site." } },
+        { "@type": "Question", "name": "How fast can you respond to a snow event?", "acceptedAnswer": { "@type": "Answer", "text": "Our direct management structure lets us mobilize quickly during seasonal peaks and emergency callouts, and our snow and ice crews operate around the clock during winter weather." } },
+        { "@type": "Question", "name": "How do I know the work was done?", "acceptedAnswer": { "@type": "Answer", "text": "For snow and ice management we document each visit in real time, including service times, site photos, weather observations and GPS-verified attendance records." } },
+        { "@type": "Question", "name": "Is TDS certified and safety compliant?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Crews are trained, uniformed and WorkSafeBC covered, and TDS holds recognized safety and industry credentials including SafeContractor, Safe Company, BCCSA COR, VRCA and SIMA membership, plus GHG Protocol Scope 1 and 2 certification." } }
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  // Mobile menu
+  var btn=document.getElementById('menuBtn'), nav=document.getElementById('mnav'), icon=document.getElementById('menuIcon');
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open); btn.setAttribute('aria-label',open?'Close menu':'Open menu');
+    icon.setAttribute('d',open?'M6 6l12 12M18 6L6 18':'M4 7h16M4 12h16M4 17h16');
+  });
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');icon.setAttribute('d','M4 7h16M4 12h16M4 17h16');});});
+  // Desktop dropdowns (click for touch and keyboard, hover handled in CSS)
+  var dds=document.querySelectorAll('.has-dd');
+  dds.forEach(function(li){
+    var b=li.querySelector('button');
+    b.addEventListener('click',function(e){
+      e.stopPropagation();
+      var open=!li.classList.contains('open');
+      dds.forEach(function(x){x.classList.remove('open');x.querySelector('button').setAttribute('aria-expanded','false');});
+      if(open){li.classList.add('open');b.setAttribute('aria-expanded','true');}
+    });
+  });
+  document.addEventListener('click',function(){dds.forEach(function(x){x.classList.remove('open');x.querySelector('button').setAttribute('aria-expanded','false');});});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){dds.forEach(function(x){x.classList.remove('open');});nav.classList.remove('open');}});
+  // Quote form (front-end validation only; connect to Gravity Forms in the WordPress build)
+  var form=document.getElementById('quoteForm'), ok=document.getElementById('formOk');
+  form.addEventListener('submit',function(e){
+    e.preventDefault(); var valid=true;
+    form.querySelectorAll('[required]').forEach(function(el){
+      var good=el.value.trim()!=='' && (el.type!=='email'||/^\S+@\S+\.\S+$/.test(el.value));
+      el.parentNode.classList.toggle('err',!good); el.setAttribute('aria-invalid',!good);
+      if(!good) valid=false;
+    });
+    if(valid){ok.classList.add('show');form.reset();} else {ok.classList.remove('show');}
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
